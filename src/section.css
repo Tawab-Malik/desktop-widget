@@ -286,6 +286,12 @@ transition: transform 0.3s ease, color 0.3s ease;
    align-items: center;
    margin-top: 63px;
 }
+ .footer p{
+   color: #2B606F;
+   opacity: 0.4;
+   font-size: 12px;
+   font-family: 'inter' , sans-serif !important;
+ }
 
 .reload-div{
   display: flex;
