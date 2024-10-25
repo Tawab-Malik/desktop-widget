@@ -43,6 +43,7 @@ const Sidebar = () => {
       <div className="reviews-section">
         
         <div className="stars">
+        <img src='./images/sidebar/google.svg' height={20} alt='img' />
           <img src='./images/sidebar/stars.svg' alt='img' />
         </div>
         <span className="reviews-text">4.9 VON 5 BASIEREND AUF 245 BEWERTUNGEN</span>

@@ -162,11 +162,15 @@ body {
   font-size: 10px;
   color: #024154;
   opacity: 0.4;
-  ;
+  font-weight: bold;
 }
 
 .stars {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .logo-section img{
