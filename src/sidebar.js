@@ -22,7 +22,7 @@ const Sidebar = () => {
       {/* Menu Items */}
       <div className="menu">
         <MenuItem icon="/images/sidebar/city.svg" title="Immobilienlexikon" description="Immobilienwissen für alle Fälle." label="KI" />
-        <MenuItem icon="/images/sidebar/elevator.svg" title="Preisschätzung" description="Den Wert Ihres Hauses schätzen lassen." label="LINK" />
+        <MenuItem icon="/images/sidebar/elevator.svg" title="Preisschätzung" description="Den Wert Ihres Hauses schätzen lassen." label="LINK " />
         <MenuItem icon="/images/sidebar/clipboard.svg" title="Checklisten" description="Praktische Checklisten für jeden Schritt." label="PDF" active />
         <MenuItem icon="/images/sidebar/book.svg" title="Ratgeber" description="Immobilien-Expertenrat für Eigentümer." label="PDF" />
         <MenuItem icon="/images/sidebar/compass.svg" title="Mandatsnavigator" description="Verständlich zum Verkaufsabschluss." label="KI" />

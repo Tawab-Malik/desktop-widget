@@ -2,9 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 .main-grid {
+  font-family: 'iner' , sans-serif !important;
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 15px;
@@ -20,9 +22,7 @@
   /* Full height of the container */
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
+
 
 .container {
   display: grid;
@@ -75,6 +75,7 @@ body {
   flex-direction: column;
   border-radius: 22px;
   width: 100%;
+  font-family: 'inter' , sans-serif !important;
 }
 
 .box.small-box.box1 {
@@ -135,6 +136,7 @@ body {
   outline: none;
   color: white;
   width: 300px;
+  font-family: 'inter' , sans-serif !important;
 }
 
 .input::placeholder {
@@ -152,6 +154,7 @@ body {
   outline: none;
   color: white;
   width: 70%;
+  font-family: 'inter' , sans-serif !important;
 }
 
 .input-block::placeholder {
@@ -182,6 +185,7 @@ body {
   position: relative;
   z-index: 10;
   cursor: pointer;
+  font-family: 'inter' , sans-serif !important;
 }
 
 .btn:hover {
@@ -370,6 +374,7 @@ transition: transform 0.3s ease, color 0.3s ease;
 
   .input-block {
         font-size: 44px;
+        font-family: 'inter' , sans-serif;
 
   }
 
