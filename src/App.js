@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import './section.css';
+import Section from './Section';
+import Sidebar from './sidebar';
+import Meta from './component/meta';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Meta
+                title="Desktop-Widget"
+                description="Site Consist of  side Bar and main section containing Grid columns"
+                keywords="React, desktop, keywords, Grid"
+            />
+<div className="App">
+       <div className='flexbox'>
+       <Sidebar/>
+       <Section/>
+       </div>
+       
     </div>
+    </div>
+    
   );
 }
 

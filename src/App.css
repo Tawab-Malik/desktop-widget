@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar styling */
+.sidebar {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  transition: width 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Night mode button */
+.night-mode {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.night-mode-btn {
+  background-color: #E0E7FF;
+  color: #4F46E5;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+}
+
+/* Logo section */
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1E40AF;
+}
+
+/* Menu items */
+.menu {
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.menu-item.active {
+  background-color: #023C53;
+  color: white; /* Sets text color for the active menu item container */
+}
+
+.menu-item.active .menu-title,
+.menu-item.active .menu-description,
+.menu-item.active  {
+  color: white; /* Ensures the title, description, and label are white for active items */
+}
+.menu-label{
+  color: #013D4E;
+}
+
+.menu-item:hover {
+  background-color: #023C53;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-title {
+  gap: 5px;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-title {
+  font-weight: 600;
+  color: inherit; /* Inherits color from parent (active/non-active) */
+}
+
+.menu-description {
+  font-size: 0.8rem;
+  color: inherit; /* Inherits color from parent (active/non-active) */
+}
+
+.menu-label {
+  background-color: #EEFBFF;
+  color: #013D4E;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+/* Profile section */
+.profile-section {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #459E97;
+  border-radius: 10px;
+  border: 3px solid rgba(5, 89, 114, 0.1);
+  
+}
+.profile-section img{
+  margin-top: -20px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-description{
+  font-size: 14px;
+  color: white;
+  padding-inline: 10px;
+  margin-top: 10px;
+}
+.profile-owner{
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+}
+/* Reviews section */
+.reviews-section {
+  text-align: center;
+}
+
+.reviews-text {
+  font-size: 10px;
+  color: #024154;
+}
+
+.stars {
+  margin-top: 20px;
+}
+
+.logo-section img{
+    width: 205px;
+    height: 67px ;
+}
+
+    .mainside{
+      display: flex;
+      justify-content: end;
+      margin-top: 30px;
+      margin-bottom: 20px;
+  
+    }
+
+/* Mobile and Tablet Responsive */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 80px;
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo-section,
+  .profile-section,
+  .reviews-section {
+    display: none;
   }
+
+  .menu-item {
+    justify-content: center;
+  }
+
+  .menu-title,
+  .menu-description,
+  .menu-label {
+    display: none;
+  }
+
+  .menu-icon {
+    margin-right: 0;
+  }
+
+  .menu-item.active {
+    background-color: #E0E7FF;
+  }
+
+  .menu-item:hover {
+    background-color: #F1F5F9;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .menu-icon {
+    width: 20px;
+  }
+
+  .menu-item {
+    padding: 8px;
+  }
+}
+
+
+
+.App{
+   max-width: 1300px;
+   margin-inline: auto;
+   
+}
+.flexbox{
+  display: flex;
 }
