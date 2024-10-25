@@ -245,12 +245,14 @@ h3 {
 font-size: 24px;
 font-weight: 700;
 line-height: 28px;
+font-family: 'Nunito', sans-serif !important;
 }
 .leftheader p{
 font-size: 20px;
 font-weight: normal;
 line-height: 23px;
 color: #E8E8E8;
+font-family: 'Nunito', sans-serif !important;
 }
 .header div a{
 font-size: 14px;
