@@ -31,7 +31,7 @@ const Sidebar = () => {
 
       {/* User Profile */}
       <div className="profile-section">
-        <img src="./images/sidebar/owner.svg" width={80} height={81} alt="Profile" className="profile-pic" />
+        <img src="./images/sidebar/owner.png" width={80} height={81} alt="Profile" className="profile-pic" />
         <div className="profile-details">
           <h2 className="profile-name">Immotrust AG</h2>
           <p className="profile-description">Vertrauensvolle Immobilienberatung seit 2008.</p>
